@@ -521,7 +521,7 @@ public class AdminController {
  	@ApiResponses(value = {
 			@ApiResponse(response = IS4ResGenerateScheduleByTemplate.class, code = 200, message = "Sikeres lekérés"),
 	})
-	@PostMapping("checkscheduleisexist1")
+	@PostMapping("checkscheduleisexist")
 	public Response checkScheduleIsExist(@RequestBody IS4ReqGenerateScheduleByTemplate req) {
 		return adminService.checkScheduleIsExist(req);
 	}
