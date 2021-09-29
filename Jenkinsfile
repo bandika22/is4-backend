@@ -12,6 +12,7 @@ node{
       bat "${mvnHome}/bin/mvn package"
       }
    stage('Deploy to Tomcat'){
+     bat "${tomcatBin}\\shutdown.bat"
      bat "copy target\\is4war.war \"${tomcatWeb}\\is4war.war\""
    }
       stage ('Start Tomcat Server') {
