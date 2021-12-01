@@ -144,7 +144,7 @@ public class AppointmentService {
 			return result;
 		} catch (Exception e) {
 			result.setCodeAndMessage(CODE_UNKNOWN, MSG_UNKNOWN + callId);
-			log.error("[" + currentMethodName + "] - " + callId + " - " + result.toString() + "\n" + e.toString() + " - sessionID: " + request.getSessionId() + "- permissionType: " + request.getPermissionType());
+			log.error("[" + currentMethodName + "] - " + callId + " - " + result.toString() + "\n" + e.toString() + " - sessionID: " + request.getSessionId() + "- permissionType1: " + request.getPermissionType());
 			return result;
 		}
 
