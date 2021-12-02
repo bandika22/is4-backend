@@ -196,7 +196,7 @@ public class AdminService {
 		
 		if(!request.getPermissionType().contentEquals("ADMIN")) {
 			response.setCodeAndMessage(CODE_INVALID_PERMISSION_TYPE, MSG_INVALID_PERMISSION_TYPE);
-			log.error("[" + currentMethodName + "]]]aaadddddzztuzgtrtdfff] - " + callId + " - " + response.toString() + " - " + request.getPermissionType() + " - " +"\n");
+			log.error("[" + currentMethodName + "]]]aaadddddzztuzgtrtgtrgredfff] - " + callId + " - " + response.toString() + " - " + request.getPermissionType() + " - " +"\n");
 			return response;
 		}
 		
