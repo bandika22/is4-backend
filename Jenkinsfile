@@ -1,8 +1,8 @@
 
 node{
 
-   def tomcatWeb = 'C:\\apache-tomcat-9.0.53\\webapps'
-   def tomcatBin = 'C:\\apache-tomcat-9.0.53\\bin'
+   def tomcatWeb = '/opt/tomcat1/webapps'
+   def tomcatBin = '/opt/tomcat1/bin'
    def tomcatStatus = ''
    stage('SCM Checkout'){
      git 'https://github.com/bandika22/is4-backend.git'
